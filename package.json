@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Sano000/laravel-elixir-mocha"
   },
   "keywords": [
     "laravel",
@@ -21,7 +21,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "/issues"
+    "url": "https://github.com/Sano000/laravel-elixir-mocha/issues"
   },
   "homepage": "",
   "dependencies": {

@@ -14,18 +14,24 @@ elixir.extend('mocha', function (src, options) {
 
 
   new elixir.Task('mocha', function () {
+    var error = false;
+
     return gulp.src(src)
       .pipe(mocha(options))
       .once('error', function (e) {
+        error = true;
+
         gulp.src(src)
         .pipe(notify({
           title: 'Laravel Elixir',
           message: 'JavaScript test failed: ' + e.message,
           icon: __dirname + '/../laravel-elixir/icons/fail.png'
         }));
+
+        this.emit('end');
       })
       .once('end', function () {
-        gulp.src(src)
+        error || gulp.src(src)
         .pipe(notify({
           title: 'Laravel Elixir',
           message: 'JavaScript tests passed',
