@@ -1,0 +1,32 @@
+{
+  "name": "laravel-elixir-mocha",
+  "version": "0.1.0",
+  "description": "Mocha for Laravel Elixir",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "laravel",
+    "elixir",
+    "mocha",
+    "gulp"
+  ],
+  "author": {
+    "name": "Alexander Cerleniuk"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "/issues"
+  },
+  "homepage": "",
+  "dependencies": {
+    "gulp-mocha": "^2.1.3",
+    "gulp-notify": "^2.2.0",
+    "map-stream": "0.0.6"
+  }
+}
