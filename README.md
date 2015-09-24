@@ -16,7 +16,7 @@ var elixir = require('laravel-elixir');
 require('laravel-elixir-mocha');
 
 elixir(function(mix) {
-    mix.phpcs([
+    mix.mocha([
       'tests/**/*Spec.js'
     ], {
       reporter: 'nyan'
